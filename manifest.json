@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "ReelTrack",
+  "version": "1.0.0",
+  "description": "A personal browser-side tracker for Instagram Reels.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.instagram.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.instagram.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "ReelTrack",
+    "default_popup": "popup.html"
+  }
+}
