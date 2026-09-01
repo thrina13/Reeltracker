@@ -86,4 +86,7 @@ The challenging part was working with Instagram's dynamic page behavior.
 
 Instagram doesn't always reload the page when moving between Reels, so the extension needs to continuously check the current page and detect when the Reel changes.
 
+<img width="953" height="440" alt="Screenshot 2026-09-01 182444" src="https://github.com/user-attachments/assets/a179337e-46ad-48b0-999d-95aa6b3302c6" />
+
+
 Building this project helped me understand Chrome content scripts, service workers, browser storage, and working with dynamic websites
